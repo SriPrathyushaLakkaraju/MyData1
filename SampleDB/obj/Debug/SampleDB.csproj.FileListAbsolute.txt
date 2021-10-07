@@ -1,0 +1,7 @@
+C:\Training\Day1solutions\SampleDB\bin\Debug\SampleDB.exe.config
+C:\Training\Day1solutions\SampleDB\bin\Debug\SampleDB.exe
+C:\Training\Day1solutions\SampleDB\bin\Debug\SampleDB.pdb
+C:\Training\Day1solutions\SampleDB\obj\Debug\SampleDB.csproj.AssemblyReference.cache
+C:\Training\Day1solutions\SampleDB\obj\Debug\SampleDB.csproj.CoreCompileInputs.cache
+C:\Training\Day1solutions\SampleDB\obj\Debug\SampleDB.exe
+C:\Training\Day1solutions\SampleDB\obj\Debug\SampleDB.pdb
