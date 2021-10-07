@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B651D9AB-C0D7-4BAC-A86E-B8F788E37DC6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SampleConApp</RootNamespace>
+    <AssemblyName>Day1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SampleConApp.Day07.OOPAssignment</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Celsius.cs" />
+    <Compile Include="Compare.cs" />
+    <Compile Include="Day02\Arraysdemo.cs" />
+    <Compile Include="Day02\employee.cs" />
+    <Compile Include="Day02\empobject.cs" />
+    <Compile Include="Day02\fibatindex.cs" />
+    <Compile Include="Day02\isprimeornot.cs" />
+    <Compile Include="Day02\methods.cs" />
+    <Compile Include="Day02\myconsole.cs" />
+    <Compile Include="Day02\parameters.cs" />
+    <Compile Include="Day02\Pattern.cs" />
+    <Compile Include="Day02\sortthreenums.cs" />
+    <Compile Include="Day02\stringarray.cs" />
+    <Compile Include="Day02\sumandavg.cs" />
+    <Compile Include="Day02\sumofprimes.cs" />
+    <Compile Include="Day02\ValidDate.cs" />
+    <Compile Include="Day03\AbstractClassDemo.cs" />
+    <Compile Include="Day03\ClassesAndObjects.cs" />
+    <Compile Include="Day03\EmpDataUser.cs" />
+    <Compile Include="Day03\Employeeclass.cs" />
+    <Compile Include="Day03\InheritanceDemo.cs" />
+    <Compile Include="Day03\MethodOverriding.cs" />
+    <Compile Include="Day03\MoreEmployees.cs" />
+    <Compile Include="Day03\ObjectSlicing.cs" />
+    <Compile Include="Day03\PracticalAbstractClass.cs" />
+    <Compile Include="Day04\Array.cs" />
+    <Compile Include="Day04\BookDetails.cs" />
+    <Compile Include="Day04\Calculator.cs" />
+    <Compile Include="Day04\CollegeDetails.cs" />
+    <Compile Include="Day04\DisplyData.cs" />
+    <Compile Include="Day04\HelloWorld.cs" />
+    <Compile Include="Day04\Student.cs" />
+    <Compile Include="Day04\StudentClass.cs" />
+    <Compile Include="Day04\TeachersDetails.cs" />
+    <Compile Include="Day04\UserData.cs" />
+    <Compile Include="Day05\AccessSpecifier.cs" />
+    <Compile Include="Day05\AccountDetails.cs" />
+    <Compile Include="Day05\BookDemo.cs" />
+    <Compile Include="Day05\ClassesAndObjects.cs" />
+    <Compile Include="Day05\MethodOverriding.cs" />
+    <Compile Include="Day05\OOPInheritance.cs" />
+    <Compile Include="Day06\AbstractClass.cs" />
+    <Compile Include="Day06\AbstractClassDemo.cs" />
+    <Compile Include="Day06\MyConsoleNew.cs" />
+    <Compile Include="Day06\MyConsoleNewTest.cs" />
+    <Compile Include="Day06\UserIf.cs" />
+    <Compile Include="Day07\Constructor.cs" />
+    <Compile Include="Day07\ExceptionHandlingSimple.cs" />
+    <Compile Include="Day07\InterfaceDemo.cs" />
+    <Compile Include="Day07\InterfaceExplictDemo.cs" />
+    <Compile Include="Day07\OOPAssignment.cs" />
+    <Compile Include="Day07\SealedClass.cs" />
+    <Compile Include="Day08\OOPExampleUsingDataTable.cs" />
+    <Compile Include="MPTable.cs" />
+    <Compile Include="ObjectDemo.cs" />
+    <Compile Include="Parse.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadInput.cs" />
+    <Compile Include="TryParse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
