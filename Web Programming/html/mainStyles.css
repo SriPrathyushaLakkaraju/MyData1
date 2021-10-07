@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    font-size: 48pt;
+    color: forestgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2,h3{
+    font-size: 28pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div,article{
+    width: 35%;
+    display: inline-block;
+    border: 2px solid ghostwhite;
+    margin-left: 40px;
+    padding: 10px;
+    vertical-align: top;
+    
+}
+p{
+    color: darkorange;
+    text-align: center;
+    font-size: 20pt;
+}
+nav{
+    text-align: center;
+    color: aqua;
+   
+}
+a{
+    width: 125pt;
+    height: 28pt;
+    font-size: 15pt;
+    display: inline-block;
+    background-color:cyan;
+}
+.tableDiv{
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    background-color: grey;
+}

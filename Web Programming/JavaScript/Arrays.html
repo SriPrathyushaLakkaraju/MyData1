@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script src="./Scripts/Arrays.js"></script>
+    <script>
+        let numbers=[];
+        function onAdd() {
+            let no=parseInt(document.getElementById("txtNum").value);
+            numbers.push(no);
+            alert("Number is adeded");
+            let lst=document.getElementById("lstNumbers");
+            lst.innerHTML="";
+            for (const no of numbers) {//new from ES2015 onwords
+                lst.innerHTML +="<li>"+no+"</li>"
+                
+            }
+        }
+    </script>
+   
+</head>
+<body>
+    <h2>Work with Arrays</h2>
+    <input id="txtNum" type="number" placeholder="Enter some number"/>
+    <button onclick="onAdd()">Add Number</button>
+    <ol id="lstNumbers"></ol>
+</body>
+</html>

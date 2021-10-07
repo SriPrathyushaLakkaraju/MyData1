@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Example</title>
+    <link rel="stylesheet" href="./Scripts/hotelstyles.css">
+    <script src="./Scripts/hotelexample.js"></script>
+    <script src="./Scripts/common.js"></script>
+    <script>
+        let basket=[];//blank array for storing the billing items
+        function generateBill()
+        {
+            let amount=0.0;
+            let itemNames="";
+            for(const item of basket){
+                amount+=parseInt(item.itemPrice);
+                itemNames+=item.itemName +" ,"
+            }
+            $("billDetail").innerText="Total Bill : Rs."+amount;
+            $("billDetail").innerHTML+="<br>"+itemNames;
+        }
+         function init()
+         {
+             let table=$("tblMenu");
+             foodItems.forEach(function(element) {//Old syntax of ES6
+                let row=`<tr><td>${element.itemId}</td><td>${element.itemName}</td><td>${element.itemPrice}
+                    </td><td><input class="select" selected="${element.itemId}" type="checkbox"/>Add Item</td></tr>`;
+                    table.innerHTML +=row;
+                 
+             });
+         $OnClassClick("select",function(){
+             basket.push(findItem(this.attributes[1].value));
+         });
+         $("btnBill").addEventListener("click",generateBill);
+        }
+         window.addEventListener("load",init);//unobtrusive Js,clean seperation of JS code and the HTML element
+    </script>
+</head>
+<body>
+    <h1>Navayuga Restaurent,Busstand Road,Narasaraopet</h1>
+    <hr>
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">Admin Page</a>
+        <a href="#">Feedback</a>
+    </nav>
+    <div>
+        <table id="tblMenu" width="90%" align="center">
+            <tr>
+                <th>ItemId</th>
+                <th>Food Item Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button class="billButton" id="btnBill">Get Bill</button>
+        <p id="billDetail" class="billDetail">BILL AMOUNT</p>
+    </div>
+</body>
+</html>

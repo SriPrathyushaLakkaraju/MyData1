@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input, select{
+            border: 2px solid sandybrown;
+            color: slateblue;
+            background-color: yellowgreen;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 25pt;
+            min-width: 200px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        //access the values entered by the user in those controls
+        //use the DOM functions to access each element of the html.
+        function getResult()
+        {
+            var first=document.getElementById("firstvalue").value;
+            var second=document.getElementById("secondvalue").value;
+            var option=document.getElementById("option").value;
+            //create a calculating logic for those values
+            switch(option)
+            {
+                case "+":
+                    alert("The Added value :"+ (first + second));
+                    break;
+                case "-":
+                    alert("The Subtracted value :"+ (first-second));
+                    break;
+                case "*":
+                    alert("The Multiplied value :"+first*second);
+                    break;
+                case "/":
+                    alert("The Divided value :"+first/second);
+                    break;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <h1>
+            Calculator
+        </h1>
+        <input id="firstvalue" placeholder="First value"><br>
+        <input id="secondvalue" placeholder="Second Value"><br>
+        <p>
+            Select the Operation
+            <select id="option">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+        </p>
+        <button onclick="getResult()">Calculate</button>
+    </div>
+    <footer>
+        <hr/>
+        <a href="./Homepage.html">Home</a>
+        <p><i>HTML Training by PhaniRaj-@2021</i></p>
+    </footer>
+</body>
+</html>
